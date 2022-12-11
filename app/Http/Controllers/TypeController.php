@@ -45,6 +45,6 @@ class TypeController extends Controller
     public function destroy($id){
         $type = type::findOrFail($id);
         $type->delete();
-        return redirect()->route('types.index')->with('success', 'Type Berhasil Dihapus');
+        return redirect()->route('types.index')->with('success', 'Tipe Berhasil Dihapus');
     }
 }
